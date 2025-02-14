@@ -35,6 +35,7 @@ requirements:
     - numpy
     - pandas
     - pydantic
+    - pytorch
     - pyyaml
     - rasterio
     - ruff
