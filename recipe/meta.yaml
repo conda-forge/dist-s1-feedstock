@@ -15,7 +15,7 @@ build:
     - dist-s1 = dist_s1.__main__:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,12 +25,20 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy
     - asf_search
-    - geopandas
-    - rasterio
-    - pyyaml
+    - backoff
+    - click
+    - dem_stitcher
     - dist_s1_enumerator
+    - distmetrics
+    - geopandas
+    - numpy
+    - pandas
+    - pydantic
+    - pyyaml
+    - rasterio
+    - ruff
+    - scipy
 
 test:
   imports:
@@ -41,8 +49,6 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-    - pyyaml
-    - dist_s1_enumerator
 
 about:
   home: https://github.com/opera-adt/dist-s1
