@@ -30,7 +30,7 @@ requirements:
     - click
     - dem_stitcher
     - dist_s1_enumerator
-    - distmetrics
+    - distmetrics >=0.0.10
     - geopandas
     - numpy
     - pandas
