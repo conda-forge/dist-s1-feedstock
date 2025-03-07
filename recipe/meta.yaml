@@ -1,5 +1,5 @@
 {% set name = "dist-s1" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dist_s1-{{ version }}.tar.gz
-  sha256: 389f23fcdede43b622460176935a1f7a58261bcef819ba9153bcd6138701b81e
+  sha256: 8e8be72e27a1a822944a5708d6e97a15b56598b9e36e0d1ad49455644c2a0d18
 
 build:
   entry_points:
@@ -30,14 +30,14 @@ requirements:
     - click
     - dem_stitcher
     - dist_s1_enumerator
-    - distmetrics
+    - distmetrics >=0.0.10
     - geopandas
     - numpy
     - pandas
     - pydantic
     - tile_mate >=0.0.12
     - pyyaml
-    - rasterio
+    - rasterio >=1.4.0
     - ruff
     - scipy
 
