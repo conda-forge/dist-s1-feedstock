@@ -1,5 +1,5 @@
 {% set name = "dist-s1" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dist_s1-{{ version }}.tar.gz
-  sha256: 4d113263c6de007e99ab2eb1c1cfdea7f10e808545c89ef47501b063d156b8c5
+  sha256: a1e0f25fb911be6b4e3520c842324fc80672e26bda027ad13ab7ba813f955b3a
 
 build:
   entry_points:
