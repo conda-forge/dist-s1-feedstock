@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dist_s1-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/f4/f5/190dc8bf30bb6a3b23a917942b99f225a207280bbb71d70d61d2fe960224/dist_s1-{{ version }}.tar.gz
   sha256: 702625dd1e6d87c8bc11b232954d142cf74d101c47025d3a2fcfb381fcaebcdb
 
 build:
